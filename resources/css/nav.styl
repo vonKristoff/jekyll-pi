@@ -1,0 +1,125 @@
+* 
+  margin 0px 
+  padding 0 
+
+html 
+  background white
+  height 100%
+  overflow hidden
+  
+body
+  height 100%
+  background-image radial-gradient($gradient1,$gradient2)
+  background -webkit-radial-gradient(circle, $gradient1, $gradient2) transparent
+  background-image -moz-radial-gradient(50% 50%,circle,$gradient1 50%,$gradient2 100%)
+  background-size cover
+
+nav 
+  width 100%
+
+.standards
+  clearfix()
+  li
+    wh 50px 50px
+    margin 10px
+    display inline-block
+    transition all .3s
+    &:hover 
+      cursor pointer
+      border-radius 50%
+      background-color white 
+  .github 
+    background-color transparent
+    background-image url("../img/git.png")
+    background-repeat no-repeat
+    background-position 50% 50%
+    background-size cover
+    float right
+  .twitter 
+    background-image url("../img/bird.png")
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
+    float left
+  .discuss 
+    background-image url("../img/talk.png")
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
+    float left
+    @media only screen and (max-width : 600px)
+      display none
+  .nfo 
+    background-image url("../img/nfo.png")
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
+    fixed bottom 0px left 50%
+    margin-left -25px
+    
+      
+.talk 
+  transition all .5s
+  z-index 1000
+  background rgba(255, 255, 255, 0.8)
+  fixed top 0px left -500px
+  wh 400px 100%
+  padding 0px 50px 50px 50px
+  .container 
+    wh 100% 100% 
+  .mCustomScrollBox 
+    width 430px
+  #disqus_thread 
+    wh 400px 100%
+    padding-bottom 100px
+    overflow-y auto 
+  .close 
+    margin 10px
+    wh 50px 50px
+    display inline-block
+    opacity .35
+    transition all .3s
+    background url("../img/close.png") no-repeat center center
+    background-size cover
+    float right
+    relative top 0px right -50px 
+    &:hover 
+      opacity 1
+      cursor pointer
+      
+.footer
+  wh 100% 175px
+  background #333
+  fixed bottom -175px
+  transition all .3s
+  border-top 1px solid rgba(0,0,0,.25)
+  .nfo 
+    background-image url("../img/nfo.png")
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
+    fixed bottom 0px left 50%
+    margin-left -25px
+  p
+    text-align center
+    font-size .8em
+  .info
+    display inline-block
+    width 140px
+    border-left 1px solid cyan
+    border-right 1px solid cyan
+    .desc
+      padding-top 30px
+      width 580px
+      margin 0 auto
+      font-family Manksans, serif
+      color salmon
+      text-shadow 0 1px 0px rgba(0,0,0,.5)
+      font-size 1.25em
+      @media only screen and (max-width : 600px)
+        width 100%
+    .option
+      margin-top 30px
+      text-align center
+      color cyan
+      font-size .7em

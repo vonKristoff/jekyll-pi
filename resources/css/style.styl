@@ -1,0 +1,24 @@
+@import 'nib'
+@import "mixins"
+@import "nav"
+@import "fonts"
+
+html
+	background white
+
+#content
+	width 1000px
+	margin 20px auto
+	column-count 3
+	column-gap 60px
+	clearfix()
+	.post
+		overflow hidden
+		border 20px solid white
+		width 100%
+		position relative
+		box-shadow 0 5px 20px rgba(0,0,0,.135)
+		#figure
+			// overflow hidden
+			// position absolute
+			margin-left -150px // centers hidden canvas
