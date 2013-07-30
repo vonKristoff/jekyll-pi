@@ -29,8 +29,8 @@ nav{width:100%}
 @font-face{font-family:Bebas;src:url("http://87.117.252.6:67/bebas/BEBAS.eot");src:url("http://87.117.252.6:67/bebas/BEBAS.svg#avenir") format('svg'),url("http://87.117.252.6:67/bebas/BEBAS.ttf") format('truetype'),url("http://87.117.252.6:67/bebas/BEBAS.woff") format('woff');font-weight:normal;font-style:normal}
 @font-face{font-family:Manksans;src:url("http://87.117.252.6:67/manksans/manksans.eot");src:url("http://87.117.252.6:67/manksans/manksans.svg#avenir") format('svg'),url("http://87.117.252.6:67/manksans/manksans.ttf") format('truetype'),url("http://87.117.252.6:67/manksans/manksans.woff") format('woff');font-weight:normal;font-style:normal}
 html{background:#fff}
-#content{width:1000px;margin:20px auto;-webkit-column-count:3;-moz-column-count:3;column-count:3;-webkit-column-gap:60px;-moz-column-gap:60px;column-gap:60px;zoom:1;}
+#content{width:1060px;margin:20px auto;-webkit-column-count:3;-moz-column-count:3;column-count:3;-webkit-column-gap:20px;-moz-column-gap:20px;column-gap:20px;zoom:1;}
 #content:before,#content:after{content:"";display:table}
 #content:after{clear:both}
-#content .post{overflow:hidden;border:20px solid #fff;width:100%;position:relative;-webkit-box-shadow:0 5px 20px rgba(0,0,0,0.135);box-shadow:0 5px 20px rgba(0,0,0,0.135);}
+#content .post{overflow:hidden;border:20px solid #fff;width:300px;position:relative;-webkit-box-shadow:0 5px 20px rgba(0,0,0,0.135);box-shadow:0 5px 20px rgba(0,0,0,0.135);}
 #content .post #figure{margin-left:-150px}
