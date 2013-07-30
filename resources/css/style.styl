@@ -4,21 +4,35 @@
 @import "fonts"
 
 html
-	background white
+  height 100%
+  background-image radial-gradient($gradient1,$gradient2)
+  background -webkit-radial-gradient(circle, $gradient1, $gradient2) transparent
+  background-image -moz-radial-gradient(50% 50%,circle,$gradient1 50%,$gradient2 100%)
+  background-size cover
+
+body	
+	clearfix()
+
+nav
+	position fixed
+	z-index 2
 
 #content
 	width 1060px
 	margin 20px auto
-	column-count 3
-	column-gap 20px
-	clearfix()
-	.post
-		overflow hidden
-		border 20px solid white
-		width 300px
-		position relative
-		box-shadow 0 5px 20px rgba(0,0,0,.135)
-		#figure
-			// overflow hidden
-			// position absolute
-			margin-left -150px // centers hidden canvas
+	.display
+		.post
+			float left
+			overflow hidden
+			border 20px solid white
+			wh 300px 400px
+			position relative
+			box-shadow 0 5px 20px rgba(0,0,0,.135)
+			margin-bottom 20px
+			margin-right 20px
+			&:nth-child(3n)	
+				margin-right 0px		
+			#figure
+				margin-left -150px
+#hilo
+	transform rotate(45deg)
