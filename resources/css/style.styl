@@ -20,6 +20,8 @@ nav
 #content
 	width 1060px
 	margin 20px auto
+	@media (max-width: 768px)
+		width 100%
 	.display
 		.post
 			float left
@@ -34,5 +36,50 @@ nav
 				margin-right 0px		
 			#figure
 				margin-left -150px
+			.node
+				font-family Manksans
+				color #adff21
+				background rgba(0,0,0,.8)
+				position relative
+				z-index: 2
+				transition: bottom .4s
+				transition-delay: .2s
+				bottom -20px
+				// border-top 8px violet solid
+				p
+					padding 0px 0 10px 10px
+					font-size: .8em
+				h3
+					color rgba(0,255,0,.8)
+					padding 5px 10px
+					font-size: .75em
+			.overlay
+				wh 300px 390px
+				margin-top: -405px
+				margin-left -300px
+				transition all .3s
+				position: relative
+				z-index: 2
+				pre
+					background-color #fff
+					opacity: .8
+					padding-top 10px
+					padding-left 15px
+					padding-right 15px
+					width 270px
+					height 400px
+					word-wrap break-word
+					overflow hidden
+				code
+					word-wrap: break-word
+						
+			&:hover .overlay
+				opacity: 1
+				margin-left 0px
+			&:hover .node
+				bottom 40px
 #hilo
 	transform rotate(45deg)
+
+
+			

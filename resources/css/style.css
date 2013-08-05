@@ -32,7 +32,16 @@ body:before,body:after{content:"";display:table}
 body:after{clear:both}
 nav{position:fixed;z-index:2}
 #content{width:1060px;margin:20px auto;}
-#content .display .post{float:left;overflow:hidden;border:20px solid #fff;width:300px;height:400px;position:relative;-webkit-box-shadow:0 5px 20px rgba(0,0,0,0.135);box-shadow:0 5px 20px rgba(0,0,0,0.135);margin-bottom:20px;margin-right:20px;}
+@media (max-width: 768px){#content{width:100%}
+}#content .display .post{float:left;overflow:hidden;border:20px solid #fff;width:300px;height:400px;position:relative;-webkit-box-shadow:0 5px 20px rgba(0,0,0,0.135);box-shadow:0 5px 20px rgba(0,0,0,0.135);margin-bottom:20px;margin-right:20px;}
 #content .display .post:nth-child(3n){margin-right:0}
 #content .display .post #figure{margin-left:-150px}
+#content .display .post .node{font-family:Manksans;color:#adff21;background:rgba(0,0,0,0.8);position:relative;z-index:2;-webkit-transition:bottom .4s;-moz-transition:bottom .4s;-o-transition:bottom .4s;-ms-transition:bottom .4s;transition:bottom .4s;-webkit-transition-delay:.2s;-moz-transition-delay:.2s;-o-transition-delay:.2s;-ms-transition-delay:.2s;transition-delay:.2s;bottom:-20px;}
+#content .display .post .node p{padding:0 0 10px 10px;font-size:.8em}
+#content .display .post .node h3{color:rgba(0,255,0,0.8);padding:5px 10px;font-size:.75em}
+#content .display .post .overlay{width:300px;height:390px;margin-top:-405px;margin-left:-300px;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s;-ms-transition:all .3s;transition:all .3s;position:relative;z-index:2;}
+#content .display .post .overlay pre{background-color:#fff;opacity:.8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";filter:alpha(opacity=80);padding-top:10px;padding-left:15px;padding-right:15px;width:270px;height:400px;word-wrap:break-word;overflow:hidden}
+#content .display .post .overlay code{word-wrap:break-word}
+#content .display .post:hover .overlay{opacity:1;-ms-filter:none;filter:none;margin-left:0}
+#content .display .post:hover .node{bottom:40px}
 #hilo{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
